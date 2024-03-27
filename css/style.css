@@ -1,0 +1,164 @@
+/*  COMMON STARTS  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul ol li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* COMMON ENDS */
+
+
+
+
+/* NAVBAR STARTS */
+nav{
+padding: 13px 0;
+box-shadow: rgba(50, 50, 99, 0.35) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+nav h2{ 
+    display: inline-block;
+    margin-left: 30%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    
+}
+.nav-BTN{
+   margin-left: 00px;
+   padding: 10px ;
+   background-color: black;
+   color: white;
+   font-size: 20px;
+   border: none;
+   cursor: pointer;
+}
+/* NAVBAR ENDS */
+
+/* SIDEBAR STARTS */
+
+.sidebar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.384);
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms;
+    z-index: 200;
+}
+.sidebar.active{
+    opacity: 1;
+    visibility: visible;
+    transition: 200ms;
+}
+.sidebar.active .sidebar-cnt{
+transform: translateX(0);
+}
+.sidebar-cnt{
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(95, 87, 87);
+    text-align: center;
+    padding-top: 120px;
+    position: relative;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+.sidebar-cnt a:hover{
+    background-color: rgb(109, 106, 103);
+    transition: 300ms;
+    color: black;
+}
+.sidebar-cnt a{
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family:"Open Sans", sans-serif;
+    text-transform: uppercase;
+}
+.sidebar-icon{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+}
+/* SIDEBAR STARTS ENDS */
+
+/* NAVBAR ENDS */
+
+/* LOGIN FORM STARTS*/
+
+/* PASSWORD */
+
+.wrapper{
+    display: flex;
+    height: 90vh;
+   justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    background-color: rgb(146, 142, 142);
+   
+}
+.wrapper form{
+   width: 400px;
+   padding: 15px 10px;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+   border: 1px solid rgb(173, 173, 173);
+   background-color: white;
+   
+  
+}
+.wrapper form:hover{
+   box-shadow: rgba(26, 26, 51, 0.596) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+   transition: 300ms;
+   
+  
+}
+.wrapper form input{
+    width: 380px;
+    height: 50px;
+    border-radius: 25px;
+   outline: none;
+   border: 1px solid gray;
+   padding-left: 20px;
+  
+}
+form .inputwrapper{
+    position: relative;
+}
+.wrapper form .hidden-eye{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.wrapper button {
+    
+    padding: 30px 25px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.wrapper .sub-btn h3{
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+
+}
+
+/* PASSWORD */
+
+/* LOGIN FORM ENDS */
+
